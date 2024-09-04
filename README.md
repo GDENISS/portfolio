@@ -1,7 +1,7 @@
 # Portfolio Project
-Welcome to my portfoio This repository contains the code and resources for buiding a fully functional portfolio with reacr.
+Welcome to my portfoio This repository contains the code and resources for buiding a fully functional portfolio with react.
 ## Getting Started
-Basic knowledge of react and css is required. Note this is a simple project that does not dive into deep react components😜.
+Basic knowledge of react and css is required. Note this is a simple project that does not dive into deep react concepts😜.
 ### Prerequisites
 - Node.js (v14+)
 -  Git
