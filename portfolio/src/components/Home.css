@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: left;
+  position: relative; 
+}
+
+.profile-pic-container {
+  flex: 1;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--image-margin-top, 0px);
+  position: absolute; 
+  bottom: 0;
+  left: 0;
+}
+
+.profile-pic {
+  max-width: 500px; 
+  height: 450px;
+}
+
+.intro-container {
+  flex: 1;
+  position: relative; 
+  height: 100%; 
+}
+
+.intro {
+  font-family: 'Kumar One', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 5s ease-in-out;
+  position: absolute; 
+  bottom: 10px; 
+  left: 0; 
+  width: 100%; 
+  text-align: left; 
+  margin-left: var(--text-margin-left, 450px);
+  display: block; 
+}
+
+.intro h2 {
+  margin: 0;
+  line-height: 1.2;
+  display: block; 
+}
+
+.intro h2:nth-child(1) {
+  font-size: 1.5rem;
+}
+
+.intro h2:nth-child(2) {
+  font-size: 2rem;
+}
+
+.intro h2:nth-child(3) {
+  font-size: 2.5rem;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .profile-pic {
+    max-width: 350px;
+    height: 350px;
+  }
+
+  .intro h2:nth-child(1) {
+    font-size: 1.2rem;
+  }
+
+  .intro h2:nth-child(2) {
+    font-size: 1.7rem;
+  }
+
+  .intro h2:nth-child(3) {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-pic-container {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .profile-pic {
+    max-width: 300px;
+    height: 300px;
+  }
+
+  .intro {
+    position: static;
+    margin-left: 0;
+  }
+
+  .intro h2:nth-child(1) {
+    font-size: 1rem;
+  }
+
+  .intro h2:nth-child(2) {
+    font-size: 1.5rem;
+  }
+
+  .intro h2:nth-child(3) {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-pic {
+    max-width: 250px;
+    height: 250px;
+  }
+
+  .intro h2:nth-child(1) {
+    font-size: 0.8rem;
+  }
+
+  .intro h2:nth-child(2) {
+    font-size: 1.2rem;
+  }
+
+  .intro h2:nth-child(3) {
+    font-size: 1.7rem;
+  }
+}
