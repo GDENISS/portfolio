@@ -1,0 +1,46 @@
+.skills-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.skill-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.skill-box h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.skill-box p {
+  color: #666;
+}
+
+.skill-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-dots li button:before {
+  color: #333;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #007bff;
+}
+
+
+.progress-bar-black {
+  background-color: black;
+}
