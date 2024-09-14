@@ -12,13 +12,13 @@ const Skills = () => {
     {
       title: 'Programming',
       icon: <FaCode />,
-      description: 'Proficient in Python, JavaScript, Java, C++, and SQL.',
+      description: 'Proficient in Python, React and R.',
       proficiency: 90,
     },
     {
       title: 'Software Proficiency',
       icon: <FaDatabase />,
-      description: 'Experienced with IDEs, version control, databases, and operating systems.',
+      description: 'Experienced with IDEs, Civil 3d, Arcgis Pro, Quantum gis(QGIS) and Agisoft.',
       proficiency: 85,
     },
     {
@@ -30,13 +30,13 @@ const Skills = () => {
     {
       title: 'Technical Skills',
       icon: <FaMicrochip />,
-      description: 'Knowledgeable in cloud services, DevOps, cybersecurity, and machine learning.',
+      description: 'Knowledgeable in cloud services like Google earth engine,machine learning and datascience.',
       proficiency: 75,
     },
     {
       title: 'Soft Skills',
       icon: <FaUsers />,
-      description: 'Excellent communication, teamwork, problem-solving, time management, and adaptability.',
+      description: 'Excellent communication, teamwork, problem-solving, time management and adaptability.',
       proficiency: 95,
     },
   ];

@@ -18,6 +18,7 @@ const Footer = () => {
           <h2>Quick Links</h2>
           <ul>
             <li><a href="#home">Home</a></li>
+            <li><a href="#about">AboutMe</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -33,7 +34,7 @@ const Footer = () => {
             <a href="https://github.com/GDENISS" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a href="https:// x.com/@qaddeno" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/@qaddeno" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faXTwitter} />
             </a>
           </div>
