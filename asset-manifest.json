@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/porttolio/static/css/main.91e8c4ec.css",
-    "main.js": "/porttolio/static/js/main.f5092ec7.js",
-    "static/js/453.1407b060.chunk.js": "/porttolio/static/js/453.1407b060.chunk.js",
-    "static/media/profile.png": "/porttolio/static/media/profile.b7c9595d19ab69b8231d.png",
-    "static/media/slick.svg": "/porttolio/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/porttolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/porttolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/porttolio/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/porttolio/index.html",
-    "main.91e8c4ec.css.map": "/porttolio/static/css/main.91e8c4ec.css.map",
-    "main.f5092ec7.js.map": "/porttolio/static/js/main.f5092ec7.js.map",
-    "453.1407b060.chunk.js.map": "/porttolio/static/js/453.1407b060.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.199b8fb9.css",
+    "main.js": "/portfolio/static/js/main.1a59d7f8.js",
+    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/profile.png": "/portfolio/static/media/profile.b7c9595d19ab69b8231d.png",
+    "static/media/slick.svg": "/portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/portfolio/index.html",
+    "main.199b8fb9.css.map": "/portfolio/static/css/main.199b8fb9.css.map",
+    "main.1a59d7f8.js.map": "/portfolio/static/js/main.1a59d7f8.js.map",
+    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.91e8c4ec.css",
-    "static/js/main.f5092ec7.js"
+    "static/css/main.199b8fb9.css",
+    "static/js/main.1a59d7f8.js"
   ]
 }
