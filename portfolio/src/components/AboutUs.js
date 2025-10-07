@@ -1,6 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe, faCode, faMapMarkerAlt, faFutbol } from '@fortawesome/free-solid-svg-icons';
+import {
+  faGlobeAfrica,
+  faCode,
+  faMapMarkedAlt,
+  faSatellite,
+} from '@fortawesome/free-solid-svg-icons';
 import './AboutUs.css';
 
 const AboutUs = () => {
@@ -8,37 +13,63 @@ const AboutUs = () => {
     <div className="about-us" id="about">
       <h2>ABOUT ME</h2>
       <div className="about-content">
+
+        {/* GIS & Spatial Analysis */}
         <div className="about-section">
-          <FontAwesomeIcon icon={faGlobe} className="icon" />
+          <FontAwesomeIcon icon={faGlobeAfrica} className="icon" />
           <h3>Geospatial Information Systems (GIS)</h3>
           <p>
-            I am a dedicated GIS and surveying specialist with a passion for leveraging technology to solve real-world problems. Currently pursuing my studies at Dedan Kimathi University of Technology, I am skilled in remote sensing, geospatial analysis, and programming within the geospatial domain.
+            I am a passionate <strong>Geomatics and GIS specialist</strong> with a strong focus on
+            leveraging geospatial technology to address urban, environmental, and societal challenges.
+            Currently pursuing a <strong>B.Sc. in Geomatics Engineering and Geospatial Information Systems</strong> at
+            Dedan Kimathi University of Technology, I possess hands-on experience in
+            <strong> spatial analysis, cartography, geodatabase design,</strong> and
+            <strong> web-based GIS development</strong>.
           </p>
         </div>
+
+        {/* Remote Sensing */}
+        <div className="about-section">
+          <FontAwesomeIcon icon={faSatellite} className="icon" />
+          <h3>Remote Sensing & Earth Observation</h3>
+          <p>
+            I am skilled in processing and analyzing satellite imagery from sources such as
+            <strong> Landsat, Sentinel,</strong> and <strong>MODIS</strong> for applications in
+            environmental monitoring, urban change detection, and vegetation health assessment.
+            My expertise extends to <strong>Google Earth Engine</strong> and
+            <strong> Python-based image analysis</strong> for extracting meaningful geospatial insights.
+          </p>
+        </div>
+
+        {/* Spatial Programming */}
         <div className="about-section">
           <FontAwesomeIcon icon={faCode} className="icon" />
-          <h3>Web Development</h3>
+          <h3>Geospatial Programming & Web Development</h3>
           <p>
-            With experience in creating dynamic web applications, I am committed to delivering high-quality solutions in both academic and professional settings. Whether working on a complex project or leading a team, I am driven by a desire to innovate and create impactful solutions that streamline processes and enhance decision-making.
+            I develop interactive and data-driven spatial applications using
+            <strong> React, Node.js, and GeoDjango</strong>. My programming background includes
+            <strong> Python, JavaScript, and R,</strong> which I use for building analytical tools,
+            automating workflows, and integrating APIs with mapping platforms such as
+            <strong> Leaflet</strong> and <strong>Mapbox</strong>.
           </p>
         </div>
+
+        {/* Surveying & Geospatial Tools */}
         <div className="about-section">
-          <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
-          <h3>Surveying Tools</h3>
+          <FontAwesomeIcon icon={faMapMarkedAlt} className="icon" />
+          <h3>Surveying & Geospatial Tools</h3>
           <p>
-            I am proficient in tools like Civil 3D, ArcGIS, and QGIS for surveying tasks. My technical expertise allows me to deliver accurate and efficient surveying solutions.
+            Proficient in <strong>Civil 3D, ArcGIS Pro, QGIS,</strong> and <strong>Agisoft Metashape</strong>,
+            I apply advanced surveying and photogrammetry techniques to achieve
+            high-precision data collection, mapping, and modeling outcomes.
+            I am also experienced in <strong>GNSS/GPS field data acquisition</strong> and
+            <strong> UAV photogrammetry</strong>.
           </p>
         </div>
-        <div className="about-section">
-          <FontAwesomeIcon icon={faFutbol} className="icon" />
-          <h3>Sports Analytics & Esports Management</h3>
-          <p>
-            My interests extend to GIS development, sports analytics, and esports management, where I aim to combine my technical expertise with my passion for sports.
-          </p>
-        </div>
+
       </div>
     </div>
   );
-}
+};
 
 export default AboutUs;

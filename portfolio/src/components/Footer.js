@@ -28,7 +28,7 @@ const Footer = () => {
           <p>Email: githinji.mwangi10@gmail.com</p>
           <p>Phone: +254740175498</p>
           <div className="social-media">
-            <a href="https://www.linkedin.com/in/dennis-mwangi-9371a1275" target="_blank" rel="noopener noreferrer">
+            <a href="www.linkedin.com/in/mwangi-githinji-89b621234" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a href="https://github.com/GDENISS" target="_blank" rel="noopener noreferrer">
