@@ -58,7 +58,7 @@ const Projects = () => {
       description:
         'An open-source Python tool for automating ETL pipelines, offering easy data extraction, transformation, and loading with schema detection, incremental updates, and version control.',
       colab: 'https://colab.research.google.com/drive/1lA5NCliaLsOX19EqmLnJ6hvdxVi2evCZ',
-      tech: ['Python'],
+      tech: ['Python','jupyter'],
     },
     {
       title: 'Mask Generation',
@@ -66,7 +66,7 @@ const Projects = () => {
       description:
         'Creates labeled masks from satellite imagery to identify features like water, vegetation, and urban areas for model training and accurate land cover analysis.',
       colab: 'https://colab.research.google.com/drive/12ajmaDnEzx3utqEO3DAF_oDLNpphMA-p',
-      tech: ['Python'],
+      tech: ['Python','jupyter'],
     },
     {
       title: 'X Scraping',
@@ -74,7 +74,7 @@ const Projects = () => {
       description:
         'Collects and analyzes public data from X to study trends, opinions, and user behavior using Python tools like Tweepy and Pandas for sentiment and engagement analysis.',
       colab: 'https://colab.research.google.com/drive/1k-1RpDXA5H9J_3cchQammS3BSPs0IcMo',
-      tech: ['Python'],
+      tech: ['Python','jupyter'],
     },
     {
       title: 'Image Segmentation',
@@ -82,7 +82,7 @@ const Projects = () => {
       description:
         'Applies machine learning to divide satellite imagery into regions revealing land cover types like vegetation, water, and urban areas for improved environmental monitoring.',
       colab: 'https://colab.research.google.com/drive/16pkRpBx5e7VjBnWe7k2uT34HrembZ6OI',
-      tech: ['Python'],
+      tech: ['Python','jupyter'],
     },
   ];
 
