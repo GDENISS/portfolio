@@ -33,7 +33,7 @@ const Projects = () => {
       icon: faLaptopCode,
       description:
         'A full-stack storytelling platform for African narratives: user authentication, media uploads, and dynamic story feeds.',
-      github: 'https://github.com/GDENISS/Echoes-of-Heritage',  // fixed
+      github: 'https://github.com/GDENISS/Echoes-of-Heritage',
       tech: ['Node.js', 'React', 'Express', 'MongoDB'],
     },
     {
@@ -52,35 +52,37 @@ const Projects = () => {
       github: 'https://github.com/GDENISS/THE-GTM-WEBSITE-PROJECT',
       tech: ['React', 'Node.js', 'Express', 'MongoDB'],
     },
-
-    
     {
-      title: 'dlt_hub',
+      title: 'DLT Hub',
       icon: faLaptopCode,
-      description: 'DLT Hub is an open-source Python tool for automating ETL pipelines, offering easy data extraction, transformation, and loading with schema detection, incremental updates, and version control for scalable, reproducible workflows.',
-      colab: 'https://drive.google.com/file/d/1lA5NCliaLsOX19EqmLnJ6hvdxVi2evCZ/view?usp=drive_link',  // or link to repo or notebook
-      tech: ['python'],
+      description:
+        'An open-source Python tool for automating ETL pipelines, offering easy data extraction, transformation, and loading with schema detection, incremental updates, and version control.',
+      colab: 'https://colab.research.google.com/drive/1lA5NCliaLsOX19EqmLnJ6hvdxVi2evCZ',
+      tech: ['Python'],
     },
     {
-      title: 'Image analysis',
+      title: 'Mask Generation',
       icon: faLaptopCode,
-      description: 'The Mask Generation Project creates labeled masks from satellite imagery to identify features like water, vegetation, and urban areas. These masks train machine learning models for accurate land cover classification, change detection, and object segmentation in remote sensing.',
-      colab: 'https://colab.research.google.com/drive/12ajmaDnEzx3utqEO3DAF_oDLNpphMA-p?usp=drive_link',
-      tech: ['…'],
+      description:
+        'Creates labeled masks from satellite imagery to identify features like water, vegetation, and urban areas for model training and accurate land cover analysis.',
+      colab: 'https://colab.research.google.com/drive/12ajmaDnEzx3utqEO3DAF_oDLNpphMA-p',
+      tech: ['Python'],
     },
     {
-      title: 'X scraping',
+      title: 'X Scraping',
       icon: faLaptopCode,
-      description: 'The X Scraping Project collects and analyzes public data from the X platform to study trends, opinions, and user behavior. Using Python tools like Tweepy and Pandas, it extracts and visualizes tweets and hashtags to reveal patterns in sentiment, topics, and engagement.',
-      colab: 'https://colab.research.google.com/drive/1k-1RpDXA5H9J_3cchQammS3BSPs0IcMo?usp=drive_link',
-      tech: ['python'],
+      description:
+        'Collects and analyzes public data from X to study trends, opinions, and user behavior using Python tools like Tweepy and Pandas for sentiment and engagement analysis.',
+      colab: 'https://colab.research.google.com/drive/1k-1RpDXA5H9J_3cchQammS3BSPs0IcMo',
+      tech: ['Python'],
     },
     {
-      title: 'image segmentation',
+      title: 'Image Segmentation',
       icon: faLaptopCode,
-      description: 'Short description …',
-      colab: 'The Image Segmentation Project applies machine learning to divide satellite imagery into regions that reveal land cover features like vegetation, water, and urban areas. It improves classification accuracy and supports environmental monitoring, urban planning, and disaster management.',
-      tech: ['python'],
+      description:
+        'Applies machine learning to divide satellite imagery into regions revealing land cover types like vegetation, water, and urban areas for improved environmental monitoring.',
+      colab: 'https://colab.research.google.com/drive/16pkRpBx5e7VjBnWe7k2uT34HrembZ6OI',
+      tech: ['Python'],
     },
   ];
 
@@ -103,18 +105,35 @@ const Projects = () => {
                 </div>
               )}
 
-              <a
-                href={p.github}
-                className="project-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View on GitHub{' '}
-                <FontAwesomeIcon
-                  icon={faArrowUpRightFromSquare}
-                  className="link-icon"
-                />
-              </a>
+              {p.github && (
+                <a
+                  href={p.github}
+                  className="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View on GitHub{' '}
+                  <FontAwesomeIcon
+                    icon={faArrowUpRightFromSquare}
+                    className="link-icon"
+                  />
+                </a>
+              )}
+
+              {p.colab && (
+                <a
+                  href={p.colab}
+                  className="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Open in Colab{' '}
+                  <FontAwesomeIcon
+                    icon={faArrowUpRightFromSquare}
+                    className="link-icon"
+                  />
+                </a>
+              )}
             </div>
           ))}
         </div>
