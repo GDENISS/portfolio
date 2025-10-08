@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-header">
-        <h3 className="nav-logo">MyPortfolio</h3>
+      
 
         {/* Hamburger icon */}
         <button
@@ -23,7 +23,7 @@ const Navbar = () => {
       {/* Links */}
       <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
+        <li><a href="#about">AboutMe</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#skills">Skills</a></li>

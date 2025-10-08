@@ -53,25 +53,25 @@ const Projects = () => {
       tech: ['React', 'Node.js', 'Express', 'MongoDB'],
     },
 
-    // Placeholder entries for your Colab projects (fill in name/description/tech/github)
+    
     {
       title: 'dlt_hub',
       icon: faLaptopCode,
-      description: 'DLT Hub (Data Load Tool) is an open-source Python framework that simplifies building and automating data pipelines. It allows developers to easily extract, transform, and load (ETL) data from diverse sources into destinations like databases or cloud storage, with automatic schema detection, incremental loading, and version control. Designed for flexibility, DLT Hub works seamlessly in Jupyter or Colab notebooks, making it ideal for analysts, data engineers, and researchers who want clean, reproducible, and scalable data workflows using pure Python.',
+      description: 'DLT Hub is an open-source Python tool for automating ETL pipelines, offering easy data extraction, transformation, and loading with schema detection, incremental updates, and version control for scalable, reproducible workflows.',
       colab: 'https://drive.google.com/file/d/1lA5NCliaLsOX19EqmLnJ6hvdxVi2evCZ/view?usp=drive_link',  // or link to repo or notebook
       tech: ['python'],
     },
     {
       title: 'Image analysis',
       icon: faLaptopCode,
-      description: 'Mask generation in machine learning and remote sensing involves creating binary or labeled masks that identify specific features or regions of interest such as water bodies, vegetation, or urban areas within satellite or aerial imagery. These masks serve as ground truth data during model training, enabling supervised learning algorithms like convolutional neural networks to distinguish between classes based on spectral and spatial patterns. In remote sensing, mask generation is essential for tasks like land cover classification, change detection, and object segmentation, providing precise pixel level labels that improve the accuracy and reliability of geospatial machine learning models.',
+      description: 'The Mask Generation Project creates labeled masks from satellite imagery to identify features like water, vegetation, and urban areas. These masks train machine learning models for accurate land cover classification, change detection, and object segmentation in remote sensing.',
       colab: 'https://colab.research.google.com/drive/12ajmaDnEzx3utqEO3DAF_oDLNpphMA-p?usp=drive_link',
       tech: ['…'],
     },
     {
       title: 'X scraping',
       icon: faLaptopCode,
-      description: 'A project on X scraping focusing on collecting and analyzing public data from the X platform to study trends, opinions, or user behavior. It involves using Python tools like Tweepy or snscrape to gather tweets, hashtags, and engagement data, then cleaning and analyzing it with libraries such as Pandas and Matplotlib. The project helps uncover insights like sentiment, topic trends, or activity patterns, supporting research and decision making in areas such as social analysis, event monitoring, and public communication.',
+      description: 'The X Scraping Project collects and analyzes public data from the X platform to study trends, opinions, and user behavior. Using Python tools like Tweepy and Pandas, it extracts and visualizes tweets and hashtags to reveal patterns in sentiment, topics, and engagement.',
       colab: 'https://colab.research.google.com/drive/1k-1RpDXA5H9J_3cchQammS3BSPs0IcMo?usp=drive_link',
       tech: ['python'],
     },
@@ -79,7 +79,7 @@ const Projects = () => {
       title: 'image segmentation',
       icon: faLaptopCode,
       description: 'Short description …',
-      colab: 'The Image Segmentation Project uses machine learning to divide satellite images into distinct regions, identifying features like water, vegetation, and urban areas. It enhances land cover analysis and supports applications in urban planning, environmental monitoring, and disaster management.',
+      colab: 'The Image Segmentation Project applies machine learning to divide satellite imagery into regions that reveal land cover features like vegetation, water, and urban areas. It improves classification accuracy and supports environmental monitoring, urban planning, and disaster management.',
       tech: ['python'],
     },
   ];
