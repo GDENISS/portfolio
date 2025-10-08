@@ -16,61 +16,110 @@ const Projects = () => {
       title: 'Geospatial Protest Risk Analysis System',
       icon: faGlobeAfrica,
       description:
-        'An interactive Web GIS platform analyzing protest risk patterns in Nairobi County using spatial statistics, GeoDjango, and React-based visualization dashboards.',
-      github: 'https://github.com/GDENISS/Protest_Manager', 
+        'An interactive Web GIS platform analyzing protest risk patterns in Nairobi County using spatial statistics, GeoDjango, and React dashboards.',
+      github: 'https://github.com/GDENISS/Protest_Manager',
+      tech: ['GeoDjango', 'React', 'PostGIS', 'Leaflet'],
     },
-
     {
-      title: 'Global Data Tracker',
+      title: 'Global Data Tracker (COVID-19)',
       icon: faSatellite,
       description:
-        'The COVID-19 Global Data Tracker is a Python-based data analysis project that dives into global COVID-19 trends using the Our World in Data dataset. It processes and visualizes data on cases, deaths, and vaccinations across countries, delivering insights through charts and maps. Perfect for data enthusiasts, researchers, or anyone curious about pandemic trends, this project showcases data cleaning, exploratory data analysis (EDA), and visualization using Python.',
+        'A Python-based project exploring COVID-19 global trends (cases, vaccinations, mortality) using data cleaning, EDA, and visualizations.',
       github: 'https://github.com/GDENISS/Global_data_tracker_project',
+      tech: ['Pandas', 'Matplotlib', 'Plotly', 'Jupyter'],
     },
     {
-      title: 'Echoes of Heritage – Cultural Storytelling Platform',
+      title: 'Echoes of Heritage – Cultural Storytelling',
       icon: faLaptopCode,
       description:
-        'A full-stack storytelling platform that preserves and shares African cultural narratives. Includes user authentication, media uploads, and dynamic story feeds.',
-      github: 'https://github.com/GDENISS/Protest_Manager',
+        'A full-stack storytelling platform for African narratives: user authentication, media uploads, and dynamic story feeds.',
+      github: 'https://github.com/GDENISS/Echoes-of-Heritage',  // fixed
+      tech: ['Node.js', 'React', 'Express', 'MongoDB'],
     },
     {
-      title: 'Machine learning and Deeplearning',
+      title: 'Machine Learning & Deep Learning Works',
       icon: faMapMarkedAlt,
       description:
-        'I have worked on projects integrating GIS, and web technologies from processing satellite imagery with deep learning to developing interactive AI tools using Gradio. i am experienced in model training and deployment with TensorFlow and PyTorch, exploring large language models, and experimenting with generative AI for content creation. These projects reflect my focus on applying data driven and geospatial intelligence to solve real world challenges.',
+        'Projects integrating GIS and deep learning: processing satellite imagery, AI tools with Gradio, model training and deployment (TensorFlow, PyTorch).',
       github: 'https://github.com/GDENISS/DeepWorks',
+      tech: ['TensorFlow', 'PyTorch', 'Gradio', 'Satellite Imagery'],
     },
     {
-      title: 'Geospatial Developers Website',
+      title: 'Geospatial Developers Club Website',
       icon: faDatabase,
       description:
-        'Developed a full stack web appplication for the geospatial developers club at Dedan Kimathi University that is scalable and allows them to clearly identify themselves ass one og the most innoviaative club within the uiversity',
+        'Scalable full-stack web app for the Geospatial Developers Club at Dedan Kimathi University, showcasing the club’s identity and projects.',
       github: 'https://github.com/GDENISS/THE-GTM-WEBSITE-PROJECT',
+      tech: ['React', 'Node.js', 'Express', 'MongoDB'],
+    },
+
+    // Placeholder entries for your Colab projects (fill in name/description/tech/github)
+    {
+      title: 'Colab Project 1',
+      icon: faLaptopCode,
+      description: 'Short description of what this project does …',
+      github: '#',  // or link to repo or notebook
+      tech: ['…'],
+    },
+    {
+      title: 'Colab Project 2',
+      icon: faLaptopCode,
+      description: 'Short description …',
+      github: '#',
+      tech: ['…'],
+    },
+    {
+      title: 'Colab Project 3',
+      icon: faLaptopCode,
+      description: 'Short description …',
+      github: '#',
+      tech: ['…'],
+    },
+    {
+      title: 'Colab Project 4',
+      icon: faLaptopCode,
+      description: 'Short description …',
+      github: '#',
+      tech: ['…'],
     },
   ];
 
   return (
-    <div className="projects-container" id="projects">
-      <h2>PROJECTS</h2>
-      <div className="projects-grid">
-        {projects.map((project, index) => (
-          <div key={index} className="project-card">
-            <FontAwesomeIcon icon={project.icon} className="project-icon" />
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <a
-              href={project.github}
-              className="project-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View on GitHub <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="link-icon" />
-            </a>
-          </div>
-        ))}
+    <section className="projects-section" id="projects">
+      <div className="wrapper">
+        <h2 className="section-title">Projects</h2>
+        <div className="projects-grid">
+          {projects.map((p, idx) => (
+            <div key={idx} className="project-card">
+              <FontAwesomeIcon icon={p.icon} className="project-icon" />
+              <h3 className="project-title">{p.title}</h3>
+              <p className="project-desc">{p.description}</p>
+
+              {p.tech && (
+                <div className="tech-stack">
+                  {p.tech.map((t) => (
+                    <span key={t} className="tech-tag">{t}</span>
+                  ))}
+                </div>
+              )}
+
+              <a
+                href={p.github}
+                className="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub{' '}
+                <FontAwesomeIcon
+                  icon={faArrowUpRightFromSquare}
+                  className="link-icon"
+                />
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

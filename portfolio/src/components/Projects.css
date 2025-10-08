@@ -1,72 +1,96 @@
-.projects-container {
-  padding: 80px 10%;
-  background: #f8f9fa;
-  text-align: center;
+/* Projects.css */
+
+.projects-section {
+  padding: 4rem 1rem;
+  background-color: #fdfdfd;
+  color: #333;
 }
 
-.projects-container h2 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  position: relative;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
 .project-card {
   background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 30px 20px;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
 }
 
 .project-icon {
   font-size: 2.5rem;
-  color: #006994;
-  margin-bottom: 15px;
+  color: #007acc;
+  margin-bottom: 1rem;
 }
 
-.project-card h3 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #222;
+.project-title {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
 }
 
-.project-card p {
-  color: #555;
-  font-size: 0.95rem;
+.project-desc {
+  flex-grow: 1;
   line-height: 1.5;
-  margin-bottom: 20px;
+}
+
+.tech-stack {
+  margin: 1rem 0;
+}
+
+.tech-tag {
+  display: inline-block;
+  background: #e3f2fd;
+  color: #0277bd;
+  padding: 4px 8px;
+  border-radius: 12px;
+  margin-right: 6px;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
 }
 
 .project-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  color: #007acc;
+  font-weight: 500;
   text-decoration: none;
-  font-size: 0.95rem;
-  color: #007bff;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.project-link:hover {
-  color: #0056b3;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .link-icon {
-  font-size: 0.85rem;
+  margin-left: 6px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .project-card {
+    padding: 1.5rem 1rem;
+  }
 }
