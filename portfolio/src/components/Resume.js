@@ -5,7 +5,7 @@ const Resume = () => {
     <div style={{ textAlign: 'center', marginTop: '50px', fontFamily: 'Arial, sans-serif' }} id='resume'>
       <h1 style={{ fontFamily: 'Kumar One, cursive', fontSize: '1.5em' }}>Githinji Mwangi's Resume</h1>
       <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '1.2em' }}>Click the button below to download my resume:</p>
-      <a href="https://drive.google.com/file/d/1Yrhr7Mf_gXTv7U6qD-paYDBtcHHDgdBe/view?usp=sharing" download="Githinji_Mwangi_Resume.pdf">
+      <a href="https://drive.google.com/file/d/1wa7n2WvVfQ-45H98m1zkm5K0s2_0IyDX/view?usp=sharing" download="Githinji_Mwangi_Resume.pdf">
         <button style={{
           padding: '10px 20px',
           fontSize: '14px',
