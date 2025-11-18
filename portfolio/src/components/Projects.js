@@ -34,7 +34,7 @@ const Projects = () => {
       description:
         'A full-stack storytelling platform for African narratives: user authentication, media uploads, and dynamic story feeds.',
       github: 'https://github.com/GDENISS/Echoes-of-Heritage',
-      tech: ['Node.js', 'React', 'Express', 'MongoDB'],
+      tech: ['Node.js', 'React', 'Express', 'MongoDB', 'figma'],
     },
     {
       title: 'Machine Learning & Deep Learning Works',
@@ -50,7 +50,7 @@ const Projects = () => {
       description:
         'Scalable full-stack web app for the Geospatial Developers Club at Dedan Kimathi University, showcasing the club’s identity and projects.',
       github: 'https://github.com/GDENISS/THE-GTM-WEBSITE-PROJECT',
-      tech: ['React', 'Node.js', 'Express', 'MongoDB'],
+      tech: ['React', 'Node.js', 'Express', 'MongoDB','figma'],
     },
     {
       title: 'DLT Hub',
